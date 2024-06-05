@@ -52,8 +52,27 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LargeCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LargeCard.Designer.cs">
+      <DependentUpon>LargeCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Band.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmallCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SmallCard.Designer.cs">
+      <DependentUpon>SmallCard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LargeCard.resx">
+      <DependentUpon>LargeCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -64,6 +83,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SmallCard.resx">
+      <DependentUpon>SmallCard.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -82,7 +104,6 @@
     <Folder Include="Enums\" />
     <Folder Include="EventArgs\" />
     <Folder Include="Forms\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nova-twins.jpg" />
